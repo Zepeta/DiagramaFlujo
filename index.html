@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+</head>
+<body>
+    <div class="simbolos">
+        <div class="titulo"><center>Panel de símbolos</center></div>
+        <br><br><!--crossorigin = anonymous-->
+        <img id="inicio" src="Simbolos/inicio.jpg" width="120" height="80" title="Inicio" draggable="true" ondragstart="onDragStart(event);">
+        <img id="DecVar" src="Simbolos/DecVar.png" title="Declaración de variable" draggable="true" ondragstart="onDragStart(event);">
+        <img id="entrada" src="Simbolos/entrada.PNG" title="Entrada" draggable="true" ondragstart="onDragStart(event);">
+        <img id="salida" src="Simbolos/salida.png" title="Salida" draggable="true" ondragstart="onDragStart(event);">
+        <img id="sentencia" src="Simbolos/sentencia.png" title="Sentencia" draggable="true" ondragstart="onDragStart(event);">
+        <img id="condIF" src="Simbolos/condIF.png" title="Condición IF" draggable="true" ondragstart="onDragStart(event);">
+        <img id="sentRept" src="Simbolos/sentRept.png" title="Sentencia de repetición" draggable="true" ondragstart="onDragStart(event);">
+        <img id="fin" src="Simbolos/fin.PNG" title="Fin" draggable="true" ondragstart="onDragStart(event);">
+    </div>
+    <div class="botones">
+            <button onclick="modificar()">Modificar elemento</button>
+            <button onclick="eliminar()">Eliminar elemento</button>  
+    </div>
+    
+    <div class="herramientas">
+        <center>
+        <div class="titulo">Panel de herramientas</div>
+        <br><br><br>
+        <button onclick="guardar()">Guardar documento</button>
+        <button onclick="cargar()">Cargar documento</button>
+        </center>
+    </div>
+    
+    <div id="descargable">
+        <div id="lienzo" class="lienzo" ondragover="onDragOver(event);" ondrop="onDrop(event);"><!--DropZone-->
+            <div id="tituloDoc" class="titulo">Nuevo documento</div>
+            <br>
+        </div>   
+        <div id="panelCod" class="PanelCod">    
+        </div>
+    </div>
+        
+    <canvas id="canvas" hidden></canvas>
+</body>
+</html>

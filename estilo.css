@@ -1,0 +1,72 @@
+body{
+    background-color: #4cc2db;
+}
+.simbolos > img{
+    /*text-align: center;*/
+    padding-left: 5px;
+    width: 6.5em;
+    height: 3.5em; 
+}
+img{
+    width: 160;
+    height: 60;
+}
+button{
+    font-size: 14px;
+}
+.titulo{
+    position: fixed;
+    border: 3px solid black;
+    background-color: #64d8f1;
+    font-weight: bold;
+    width: 9%;
+}
+#tituloDoc{
+    width: 7rem;
+}
+.botones{
+    position: absolute;
+    border: 3px solid black;
+    background-color: #64d8f1;
+    font-weight: bold;
+    text-align: center;
+    width: 9%;
+    bottom: 31%;    
+}
+.simbolos{
+    position: absolute;
+    width: 11%;
+    height: 54%;
+    border: 3px solid black;
+    /*background-color: white;*/
+    overflow: auto;
+}
+.herramientas{
+    position: absolute;
+    width: 9%;
+    height: 25%;
+    bottom: 20px; 
+    border: 3px solid black;
+    /*background-color: white;*/
+}
+.lienzo{
+    position: absolute;
+    text-align: center;
+    width: 85%;
+    height: 70%;
+    right: 3px;
+    background-color: white;
+    border: 3px solid black;
+    overflow: auto;
+}
+.PanelCod{
+    width: 85%;
+    height: 23%;
+    bottom: 3px;
+    right: 3px;
+    background-color: white;
+    border: 3px solid black;
+    position: absolute;
+    overflow: auto;
+    padding: 5px;
+}
